@@ -1,0 +1,87 @@
+BODY, TH, TD, INPUT, SELECT, TEXTAREA {
+  font-size: 10pt;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+:root {
+  --background-color: linear-gradient(0deg, #090607 16.62%, rgb(83, 20, 94) 200%);
+  --text-color: white;
+}
+
+
+.body {
+  margin: 100px;
+  background: var(--background-color);
+  color: var(--text-color);
+  height: 100vh;
+}
+
+.conteudo {
+  
+}
+
+.conteudo__title {
+  font-size: 30px;
+}
+
+.conteudo__paragraph {
+  font-size: 15px;
+}
+
+.conteudo__form{
+
+}
+
+.select{
+  border-radius: 5px;
+}
+
+.form__line_1 {
+  margin: 40px 0 20px 0;
+}
+
+.form__line_2 {
+  margin-top: 30px;
+  display: flex;
+  gap: 50px;
+}
+
+.form__textarea{
+  border-radius: 5px;
+}
+
+.form__button {
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+
+.container__qrcode {
+
+}
+
+
+DIV.page-header {
+  margin: 16px 0px 16px 0px;
+}
+
+DIV.page-footer {
+  margin: 16px 0px 16px 0px;
+  text-align: right;
+}
+
+DIV.section {
+  margin: 16px 0px 16px 0px;
+}
+
+#dataCaps TABLE {
+  border-collapse: collapse;
+}
+
+#dataCaps TABLE,
+#dataCaps TABLE TH,
+#dataCaps TABLE TD {
+  margin: 0px;
+  padding: 0px 4px 0px 4px;
+  border: 1px solid #000000;
+}

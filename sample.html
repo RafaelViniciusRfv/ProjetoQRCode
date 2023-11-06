@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=Utf-8">
+  <script type="text/javascript" src="qrcode.js"></script>
+  <!-- SJIS Support (optional) -->
+  <script type="text/javascript" src="qrcode_SJIS.js"></script>
+  <!--
+    <script type="text/javascript" src="qrcode_SJIS.js"></script>
+-->
+  <!-- Uncomment to encode string in qrcode as UTF8 (optional) -->
+  <!--
+    <script type="text/javascript" src="qrcode_UTF8.js"></script>
+-->
+  <script type="text/javascript" src="sample.js"></script>
+  <title>QR Code Genius</title>
+</head>
+
+<body onload="body_loadHander()" class="body">
+  <header>
+
+  </header>
+
+  <main class="conteudo">
+    <h1 class="conteudo__title">QR Code Generator</h1>
+    <p class="conteudo__paragraph">QR Code Generator implementation in JavaScript, Java and more. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat voluptatum ad quas perferendis architecto aperiam. Alias nam rem, sed dolor laborum illum perferendis voluptatum quam veniam accusamus, provident voluptatibus molestias!</p>
+
+    <!-----------------------------------------------section_formulario----------------------------------------------->
+
+    <form name="qrForm" class="conteudo__form">
+      <div class="form__line_1">
+        <span>TypeNumber:</span>
+        <select name="t" class="select"></select>
+        <span>ErrorCorrectionLevel:</span>
+        <select name="e" class="select">
+          <option value="L">L(7%)</option>
+          <option value="M" selected="selected">M(15%)</option>
+          <option value="Q">Q(25%)</option>
+          <option value="H">H(30%)</option>
+        </select>
+
+        <span>Mode:</span>
+        <select name="m" class="select">
+          <option value="Numeric">Numeric</option>
+          <option value="Alphanumeric">Alphanumeric</option>
+          <option value="Byte" selected>Byte</option>
+          <option value="Kanji">Kanji</option>
+        </select>
+
+        <span>Multibyte:</span>
+        <select name="mb" class="select">
+          <option value="default">None</option>
+          <option value="SJIS">SJIS</option>
+          <option value="UTF-8" selected>UTF-8</option>
+        </select>
+      </div>
+
+      <!-----------------------------------------------text/button/code----------------------------------------------->
+      
+      <div class="form__line_2">
+        <div>
+          <textarea class="form__textarea" name="msg" rows="10" cols="40">here comes qr!</textarea>
+          <br />
+          <input class="form__button" type="button" value="update" onclick="update_qrcode()">
+        </div>
+        <div class="container__qrcode" id="qr"></div>
+      </div>
+    </form>
+  </main>
+
+  <footer></footer>
+</body>
+
+</html>
