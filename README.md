@@ -1,10 +1,10 @@
 # ProjetoQRCode
 
 # Alunos
-Everton
-José
-Rafael 
-Rafael Vinicus
+- Everton
+- José
+- Rafael 
+- Rafael Vinicus
 
 # Dificuldade
 Básica[]
